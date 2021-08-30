@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-                bat 'rmdir /s /q spring-boot-jenkins'
+              //  bat 'rmdir /s /q spring-boot-jenkins'
                 bat 'git clone https://github.com/tulip2201/spring-boot-jenkins.git'
                 bat 'mvn clean -f spring-boot-jenkins/springboot-jenkins-test'
             }
